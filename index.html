@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone Footprint Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="hero-content">
+        <h1>Your iPhone Footprint</h1>
+        <p class="subtitle">
+          Check off every iPhone you've owned — new or refurbished — to see
+          your cumulative environmental impact across CO&#8322;, water, and raw
+          material costs.
+        </p>
+      </div>
+
+      <div id="calc-grid"></div>
+
+      <div id="calc-summary" class="hidden">
+        <div class="calc-stat">
+          <div class="calc-stat-value" id="calc-co2">0</div>
+          <div class="calc-stat-label">kg CO&#8322; total</div>
+          <div class="calc-stat-equiv" id="calc-co2-equiv"></div>
+        </div>
+        <div class="calc-stat">
+          <div class="calc-stat-value" id="calc-water">0</div>
+          <div class="calc-stat-label">Liters of water</div>
+          <div class="calc-stat-equiv" id="calc-water-equiv"></div>
+        </div>
+        <div class="calc-stat">
+          <div class="calc-stat-value" id="calc-raw">$0</div>
+          <div class="calc-stat-label">Raw material cost</div>
+          <div class="calc-stat-equiv" id="calc-raw-equiv"></div>
+        </div>
+        <div class="calc-stat">
+          <div class="calc-stat-value" id="calc-devices">0</div>
+          <div class="calc-stat-label">Devices</div>
+          <div class="calc-stat-equiv" id="calc-devices-equiv"></div>
+        </div>
+      </div>
+
+      <div id="refurb-note" class="hidden">
+        <strong>Why does refurbished matter?</strong>
+        Buying refurbished skips the mining, smelting, and manufacturing steps
+        — roughly 80% of an iPhone's environmental cost. We count refurbished
+        devices at 20% of a new phone's footprint.
+      </div>
+
+      <footer>
+        <p>
+          Data from
+          <a href="https://www.apple.com/environment/" target="_blank" rel="noopener">Apple Environmental Reports</a>,
+          <a href="https://www.usgs.gov/centers/national-minerals-information-center" target="_blank" rel="noopener">USGS</a>,
+          and peer-reviewed LCA studies. iPhone 17 data estimated. Figures are approximate and educational.
+        </p>
+        <p class="credit">Vibe-coded by Jonathan Sims, Babson College</p>
+        <p class="credit">
+          <a href="https://jonsims.github.io/iphone-minerals/">Explore the full iPhone Minerals site →</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
