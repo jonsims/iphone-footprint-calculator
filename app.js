@@ -73,7 +73,7 @@ function update() {
 
     const stats = computePhoneStats(phone);
     totalCo2 += phone.carbonFootprint * factor;
-    totalWater += stats.totalWater * factor;
+    totalWater += phone.waterFootprint * factor;
     totalRaw += stats.rawCost * factor;
   });
 
