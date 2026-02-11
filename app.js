@@ -78,7 +78,7 @@ function update() {
   });
 
   $("#calc-co2").textContent = Math.round(totalCo2);
-  $("#calc-co2-equiv").textContent = `≈ ${Math.round(totalCo2 * 2.3)} miles driven`;
+  $("#calc-co2-equiv").textContent = `≈ ${(totalCo2 / 8.89).toFixed(1)} gallons of gas burned`;
 
   $("#calc-water").textContent = Math.round(totalWater).toLocaleString();
   $("#calc-water-equiv").textContent = `≈ ${(totalWater / 300).toFixed(1)} bathtubs`;

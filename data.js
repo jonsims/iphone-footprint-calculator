@@ -63,7 +63,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-11", name: "iPhone 11", year: 2019, carbonFootprint: 72,
+    id: "iphone-11", name: "iPhone 11", year: 2019, carbonFootprint: 70,
     materials: [
       { id: "aluminum", grams: 30 }, { id: "glass", grams: 32 },
       { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 6.3 },
@@ -89,7 +89,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-12", name: "iPhone 12", year: 2020, carbonFootprint: 70,
+    id: "iphone-12", name: "iPhone 12", year: 2020, carbonFootprint: 68,
     materials: [
       { id: "aluminum", grams: 26 }, { id: "glass", grams: 33 },
       { id: "lithium", grams: 1.0 }, { id: "cobalt", grams: 5.5 },
@@ -180,7 +180,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-15-pro", name: "iPhone 15 Pro", year: 2023, carbonFootprint: 56,
+    id: "iphone-15-pro", name: "iPhone 15 Pro", year: 2023, carbonFootprint: 65,
     materials: [
       { id: "titanium", grams: 22 }, { id: "aluminum", grams: 12 },
       { id: "stainless-steel", grams: 10 }, { id: "glass", grams: 36 },
@@ -207,7 +207,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-16-pro", name: "iPhone 16 Pro", year: 2024, carbonFootprint: 56,
+    id: "iphone-16-pro", name: "iPhone 16 Pro", year: 2024, carbonFootprint: 61,
     materials: [
       { id: "titanium", grams: 24 }, { id: "aluminum", grams: 13 },
       { id: "stainless-steel", grams: 10 }, { id: "glass", grams: 38 },
@@ -221,7 +221,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-17", name: "iPhone 17", year: 2025, carbonFootprint: 52,
+    id: "iphone-17", name: "iPhone 17", year: 2025, carbonFootprint: 55,
     materials: [
       { id: "aluminum", grams: 24 }, { id: "stainless-steel", grams: 10 },
       { id: "glass", grams: 34 }, { id: "lithium", grams: 1.3 },
@@ -234,7 +234,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-17-pro", name: "iPhone 17 Pro", year: 2025, carbonFootprint: 54,
+    id: "iphone-17-pro", name: "iPhone 17 Pro", year: 2025, carbonFootprint: 64,
     materials: [
       { id: "titanium", grams: 20 }, { id: "aluminum", grams: 16 },
       { id: "stainless-steel", grams: 8 }, { id: "glass", grams: 38 },
