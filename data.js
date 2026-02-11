@@ -24,7 +24,7 @@ const materials = {
 
 const phones = [
   {
-    id: "iphone-x", name: "iPhone X", year: 2017, carbonFootprint: 79, waterFootprint: 15500,
+    id: "iphone-x", name: "iPhone X", year: 2017, carbonFootprint: 79, waterFootprint: 15500, bomCost: 370, retailPrice: 999,
     materials: [
       { id: "stainless-steel", grams: 55 }, { id: "glass", grams: 32 },
       { id: "lithium", grams: 0.9 }, { id: "cobalt", grams: 6.5 },
@@ -37,7 +37,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-xr", name: "iPhone XR", year: 2018, carbonFootprint: 62, waterFootprint: 12200,
+    id: "iphone-xr", name: "iPhone XR", year: 2018, carbonFootprint: 62, waterFootprint: 12200, bomCost: 295, retailPrice: 749,
     materials: [
       { id: "aluminum", grams: 28 }, { id: "glass", grams: 30 },
       { id: "lithium", grams: 1.0 }, { id: "cobalt", grams: 6.0 },
@@ -50,7 +50,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-xs", name: "iPhone XS", year: 2018, carbonFootprint: 70, waterFootprint: 13700,
+    id: "iphone-xs", name: "iPhone XS", year: 2018, carbonFootprint: 70, waterFootprint: 13700, bomCost: 380, retailPrice: 999,
     materials: [
       { id: "stainless-steel", grams: 54 }, { id: "glass", grams: 34 },
       { id: "lithium", grams: 0.9 }, { id: "cobalt", grams: 6.2 },
@@ -63,7 +63,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-11", name: "iPhone 11", year: 2019, carbonFootprint: 70, waterFootprint: 13700,
+    id: "iphone-11", name: "iPhone 11", year: 2019, carbonFootprint: 70, waterFootprint: 13700, bomCost: 330, retailPrice: 699,
     materials: [
       { id: "aluminum", grams: 30 }, { id: "glass", grams: 32 },
       { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 6.3 },
@@ -76,7 +76,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-11-pro", name: "iPhone 11 Pro", year: 2019, carbonFootprint: 80, waterFootprint: 15700,
+    id: "iphone-11-pro", name: "iPhone 11 Pro", year: 2019, carbonFootprint: 80, waterFootprint: 15700, bomCost: 450, retailPrice: 999,
     materials: [
       { id: "stainless-steel", grams: 56 }, { id: "glass", grams: 36 },
       { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 6.0 },
@@ -89,7 +89,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-12", name: "iPhone 12", year: 2020, carbonFootprint: 68, waterFootprint: 13300,
+    id: "iphone-12", name: "iPhone 12", year: 2020, carbonFootprint: 68, waterFootprint: 13300, bomCost: 415, retailPrice: 799,
     materials: [
       { id: "aluminum", grams: 26 }, { id: "glass", grams: 33 },
       { id: "lithium", grams: 1.0 }, { id: "cobalt", grams: 5.5 },
@@ -102,7 +102,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-12-pro", name: "iPhone 12 Pro", year: 2020, carbonFootprint: 82, waterFootprint: 16100,
+    id: "iphone-12-pro", name: "iPhone 12 Pro", year: 2020, carbonFootprint: 82, waterFootprint: 16100, bomCost: 465, retailPrice: 999,
     materials: [
       { id: "stainless-steel", grams: 60 }, { id: "glass", grams: 36 },
       { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 5.5 },
@@ -115,7 +115,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-13", name: "iPhone 13", year: 2021, carbonFootprint: 64, waterFootprint: 12600,
+    id: "iphone-13", name: "iPhone 13", year: 2021, carbonFootprint: 64, waterFootprint: 12600, bomCost: 400, retailPrice: 799,
     materials: [
       { id: "aluminum", grams: 26 }, { id: "glass", grams: 34 },
       { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 5.2 },
@@ -128,7 +128,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-13-pro", name: "iPhone 13 Pro", year: 2021, carbonFootprint: 69, waterFootprint: 13500,
+    id: "iphone-13-pro", name: "iPhone 13 Pro", year: 2021, carbonFootprint: 69, waterFootprint: 13500, bomCost: 510, retailPrice: 999,
     materials: [
       { id: "stainless-steel", grams: 62 }, { id: "glass", grams: 37 },
       { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 5.0 },
@@ -141,7 +141,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-14", name: "iPhone 14", year: 2022, carbonFootprint: 61, waterFootprint: 12000,
+    id: "iphone-14", name: "iPhone 14", year: 2022, carbonFootprint: 61, waterFootprint: 12000, bomCost: 375, retailPrice: 799,
     materials: [
       { id: "aluminum", grams: 25 }, { id: "glass", grams: 34 },
       { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 5.0 },
@@ -154,7 +154,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-14-pro", name: "iPhone 14 Pro", year: 2022, carbonFootprint: 65, waterFootprint: 12800,
+    id: "iphone-14-pro", name: "iPhone 14 Pro", year: 2022, carbonFootprint: 65, waterFootprint: 12800, bomCost: 445, retailPrice: 999,
     materials: [
       { id: "stainless-steel", grams: 62 }, { id: "glass", grams: 38 },
       { id: "lithium", grams: 1.2 }, { id: "cobalt", grams: 4.9 },
@@ -167,7 +167,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-15", name: "iPhone 15", year: 2023, carbonFootprint: 56, waterFootprint: 11000,
+    id: "iphone-15", name: "iPhone 15", year: 2023, carbonFootprint: 56, waterFootprint: 11000, bomCost: 390, retailPrice: 799,
     materials: [
       { id: "aluminum", grams: 25 }, { id: "stainless-steel", grams: 12 },
       { id: "glass", grams: 34 }, { id: "lithium", grams: 1.2 },
@@ -180,7 +180,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-15-pro", name: "iPhone 15 Pro", year: 2023, carbonFootprint: 65, waterFootprint: 12800,
+    id: "iphone-15-pro", name: "iPhone 15 Pro", year: 2023, carbonFootprint: 65, waterFootprint: 12800, bomCost: 480, retailPrice: 999,
     materials: [
       { id: "titanium", grams: 22 }, { id: "aluminum", grams: 12 },
       { id: "stainless-steel", grams: 10 }, { id: "glass", grams: 36 },
@@ -194,7 +194,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-16", name: "iPhone 16", year: 2024, carbonFootprint: 56, waterFootprint: 11000,
+    id: "iphone-16", name: "iPhone 16", year: 2024, carbonFootprint: 56, waterFootprint: 11000, bomCost: 395, retailPrice: 799,
     materials: [
       { id: "aluminum", grams: 25 }, { id: "stainless-steel", grams: 11 },
       { id: "glass", grams: 34 }, { id: "lithium", grams: 1.3 },
@@ -207,7 +207,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-16-pro", name: "iPhone 16 Pro", year: 2024, carbonFootprint: 61, waterFootprint: 12000,
+    id: "iphone-16-pro", name: "iPhone 16 Pro", year: 2024, carbonFootprint: 61, waterFootprint: 12000, bomCost: 465, retailPrice: 999,
     materials: [
       { id: "titanium", grams: 24 }, { id: "aluminum", grams: 13 },
       { id: "stainless-steel", grams: 10 }, { id: "glass", grams: 38 },
@@ -221,7 +221,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-17", name: "iPhone 17", year: 2025, carbonFootprint: 55, waterFootprint: 10800,
+    id: "iphone-17", name: "iPhone 17", year: 2025, carbonFootprint: 55, waterFootprint: 10800, bomCost: 380, retailPrice: 799,
     materials: [
       { id: "aluminum", grams: 24 }, { id: "stainless-steel", grams: 10 },
       { id: "glass", grams: 34 }, { id: "lithium", grams: 1.3 },
@@ -234,7 +234,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-17-pro", name: "iPhone 17 Pro", year: 2025, carbonFootprint: 64, waterFootprint: 12600,
+    id: "iphone-17-pro", name: "iPhone 17 Pro", year: 2025, carbonFootprint: 64, waterFootprint: 12600, bomCost: 460, retailPrice: 1099,
     materials: [
       { id: "titanium", grams: 20 }, { id: "aluminum", grams: 16 },
       { id: "stainless-steel", grams: 8 }, { id: "glass", grams: 38 },
