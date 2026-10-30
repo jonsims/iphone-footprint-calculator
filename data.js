@@ -1,6 +1,7 @@
 // Slim dataset for the footprint calculator
 // Only includes fields needed for CO2, water, and raw cost calculations
 // Full data at: https://github.com/jonsims/iphone-minerals
+// Gold and silver prices are spot prices on 2026-10-30 (Fortune): gold $3,962 an ounce, silver $50.04.
 
 const materials = {
   "stainless-steel": { pricePerKg: 3.5, eco: { co2PerKg: 6.15, waterPerKg: 56 } },
@@ -16,13 +17,69 @@ const materials = {
   tungsten:          { pricePerKg: 35,  eco: { co2PerKg: 12.5, waterPerKg: 380 } },
   tantalum:          { pricePerKg: 180, eco: { co2PerKg: 70, waterPerKg: 4000 } },
   tin:               { pricePerKg: 26,  eco: { co2PerKg: 16, waterPerKg: 350 } },
-  gold:              { pricePerKg: 62000, eco: { co2PerKg: 17000, waterPerKg: 260000 } },
-  silver:            { pricePerKg: 780, eco: { co2PerKg: 196, waterPerKg: 7700 } },
+  gold:              { pricePerKg: 127400, eco: { co2PerKg: 17000, waterPerKg: 260000 } },
+  silver:            { pricePerKg: 1610, eco: { co2PerKg: 196, waterPerKg: 7700 } },
   silicon:           { pricePerKg: 2.8, eco: { co2PerKg: 11.5, waterPerKg: 1500 } },
   plastics:          { pricePerKg: 2.0, eco: { co2PerKg: 3.5, waterPerKg: 14 } },
 };
 
 const phones = [
+  // iPhone 6 to 8 (added 2026-10-30). Carbon is the base model's total from
+  // Apple's Product Environmental Report. Water follows the same ratio to carbon
+  // as the newer phones (about 196 liters per kg CO2e). The materials are
+  // estimates modeled on the iPhone X list, with an aluminum body.
+  {
+    id: "iphone-6", name: "iPhone 6", year: 2014, carbonFootprint: 95, waterFootprint: 18600,
+    materials: [
+      { id: "aluminum", grams: 26 }, { id: "glass", grams: 20 },
+      { id: "lithium", grams: 0.7 }, { id: "cobalt", grams: 5.5 },
+      { id: "nickel", grams: 2.5 }, { id: "graphite", grams: 8 },
+      { id: "copper", grams: 13 }, { id: "rare-earths", grams: 0.9 },
+      { id: "tungsten", grams: 4.0 }, { id: "tantalum", grams: 0.02 },
+      { id: "tin", grams: 1.8 }, { id: "gold", grams: 0.03 },
+      { id: "silver", grams: 0.3 }, { id: "silicon", grams: 2.0 },
+      { id: "plastics", grams: 14 },
+    ],
+  },
+  {
+    id: "iphone-6s", name: "iPhone 6s", year: 2015, carbonFootprint: 54, waterFootprint: 10600,
+    materials: [
+      { id: "aluminum", grams: 28 }, { id: "glass", grams: 21 },
+      { id: "lithium", grams: 0.7 }, { id: "cobalt", grams: 5.5 },
+      { id: "nickel", grams: 2.6 }, { id: "graphite", grams: 8 },
+      { id: "copper", grams: 13 }, { id: "rare-earths", grams: 0.9 },
+      { id: "tungsten", grams: 4.0 }, { id: "tantalum", grams: 0.02 },
+      { id: "tin", grams: 1.8 }, { id: "gold", grams: 0.03 },
+      { id: "silver", grams: 0.3 }, { id: "silicon", grams: 2.2 },
+      { id: "plastics", grams: 14 },
+    ],
+  },
+  {
+    id: "iphone-7", name: "iPhone 7", year: 2016, carbonFootprint: 56, waterFootprint: 11000,
+    materials: [
+      { id: "aluminum", grams: 27 }, { id: "glass", grams: 21 },
+      { id: "lithium", grams: 0.8 }, { id: "cobalt", grams: 5.8 },
+      { id: "nickel", grams: 2.7 }, { id: "graphite", grams: 9 },
+      { id: "copper", grams: 14 }, { id: "rare-earths", grams: 1.0 },
+      { id: "tungsten", grams: 4.5 }, { id: "tantalum", grams: 0.02 },
+      { id: "tin", grams: 1.9 }, { id: "gold", grams: 0.032 },
+      { id: "silver", grams: 0.32 }, { id: "silicon", grams: 2.3 },
+      { id: "plastics", grams: 14 },
+    ],
+  },
+  {
+    id: "iphone-8", name: "iPhone 8", year: 2017, carbonFootprint: 57, waterFootprint: 11200,
+    materials: [
+      { id: "aluminum", grams: 20 }, { id: "glass", grams: 32 },
+      { id: "lithium", grams: 0.8 }, { id: "cobalt", grams: 5.8 },
+      { id: "nickel", grams: 2.8 }, { id: "graphite", grams: 9 },
+      { id: "copper", grams: 14 }, { id: "rare-earths", grams: 1.0 },
+      { id: "tungsten", grams: 4.5 }, { id: "tantalum", grams: 0.02 },
+      { id: "tin", grams: 1.9 }, { id: "gold", grams: 0.032 },
+      { id: "silver", grams: 0.32 }, { id: "silicon", grams: 2.3 },
+      { id: "plastics", grams: 14 },
+    ],
+  },
   {
     id: "iphone-x", name: "iPhone X", year: 2017, carbonFootprint: 79, waterFootprint: 15500, bomCost: 370, retailPrice: 999,
     materials: [

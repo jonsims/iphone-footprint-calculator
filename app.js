@@ -23,10 +23,10 @@ function renderGrid() {
       <input type="checkbox" class="calc-check" value="${p.id}" />
       <span class="calc-phone-name">${p.name}</span>
       <span class="calc-phone-year">${p.year}</span>
-      <div class="calc-refurb-toggle">
-        <button class="calc-toggle-btn active" data-condition="new">New</button>
-        <button class="calc-toggle-btn" data-condition="refurb">Refurb</button>
-      </div>
+      <span class="calc-refurb-toggle">
+        <button type="button" class="calc-toggle-btn active" data-condition="new" aria-pressed="true">New</button>
+        <button type="button" class="calc-toggle-btn" data-condition="refurb" aria-pressed="false">Refurb</button>
+      </span>
     </label>`
     )
     .join("");
@@ -36,8 +36,14 @@ function renderGrid() {
       e.preventDefault();
       e.stopPropagation();
       const parent = btn.closest(".calc-refurb-toggle");
-      parent.querySelectorAll(".calc-toggle-btn").forEach((b) => b.classList.remove("active"));
+      parent.querySelectorAll(".calc-toggle-btn").forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-pressed", "false");
+      });
       btn.classList.add("active");
+      btn.setAttribute("aria-pressed", "true");
+      // Choosing New or Refurb also checks the phone, so one tap counts it.
+      btn.closest(".calc-phone").querySelector(".calc-check").checked = true;
       update();
     });
   });
