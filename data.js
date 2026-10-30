@@ -119,6 +119,21 @@ const phones = [
       { id: "plastics", grams: 13 },
     ],
   },
+  // iPhone XS Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone XS scaled up for the bigger body.
+  {
+    id: "iphone-xs-max", name: "iPhone XS Max", year: 2018, carbonFootprint: 77, waterFootprint: 15100,
+    materials: [
+      { id: "stainless-steel", grams: 62 }, { id: "glass", grams: 39 },
+      { id: "lithium", grams: 0.9 }, { id: "cobalt", grams: 6.2 },
+      { id: "nickel", grams: 3.1 }, { id: "graphite", grams: 10 },
+      { id: "copper", grams: 15 }, { id: "rare-earths", grams: 1 },
+      { id: "tungsten", grams: 5 }, { id: "tantalum", grams: 0.02 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.034 },
+      { id: "silver", grams: 0.34 }, { id: "silicon", grams: 2.5 },
+      { id: "plastics", grams: 13 },
+    ],
+  },
   {
     id: "iphone-11", name: "iPhone 11", year: 2019, carbonFootprint: 70, waterFootprint: 13700, bomCost: 330, retailPrice: 699,
     materials: [
@@ -142,6 +157,21 @@ const phones = [
       { id: "tungsten", grams: 5.5 }, { id: "tantalum", grams: 0.02 },
       { id: "tin", grams: 2.0 }, { id: "gold", grams: 0.034 },
       { id: "silver", grams: 0.34 }, { id: "silicon", grams: 3.0 },
+      { id: "plastics", grams: 12 },
+    ],
+  },
+  // iPhone 11 Pro Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone 11 Pro scaled up for the bigger body.
+  {
+    id: "iphone-11-pro-max", name: "iPhone 11 Pro Max", year: 2019, carbonFootprint: 86, waterFootprint: 16900,
+    materials: [
+      { id: "stainless-steel", grams: 64 }, { id: "glass", grams: 41 },
+      { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 6 },
+      { id: "nickel", grams: 3.5 }, { id: "graphite", grams: 11 },
+      { id: "copper", grams: 16 }, { id: "rare-earths", grams: 1.1 },
+      { id: "tungsten", grams: 5.5 }, { id: "tantalum", grams: 0.02 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.034 },
+      { id: "silver", grams: 0.34 }, { id: "silicon", grams: 3 },
       { id: "plastics", grams: 12 },
     ],
   },
@@ -171,6 +201,21 @@ const phones = [
       { id: "plastics", grams: 11 },
     ],
   },
+  // iPhone 12 Pro Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone 12 Pro scaled up for the bigger body.
+  {
+    id: "iphone-12-pro-max", name: "iPhone 12 Pro Max", year: 2020, carbonFootprint: 86, waterFootprint: 16900,
+    materials: [
+      { id: "stainless-steel", grams: 69 }, { id: "glass", grams: 41 },
+      { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 5.5 },
+      { id: "nickel", grams: 4 }, { id: "graphite", grams: 12 },
+      { id: "copper", grams: 16 }, { id: "rare-earths", grams: 1.2 },
+      { id: "tungsten", grams: 5.5 }, { id: "tantalum", grams: 0.018 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.034 },
+      { id: "silver", grams: 0.34 }, { id: "silicon", grams: 3 },
+      { id: "plastics", grams: 11 },
+    ],
+  },
   {
     id: "iphone-13", name: "iPhone 13", year: 2021, carbonFootprint: 64, waterFootprint: 12600, bomCost: 400, retailPrice: 799,
     materials: [
@@ -193,6 +238,21 @@ const phones = [
       { id: "copper", grams: 17 }, { id: "rare-earths", grams: 1.3 },
       { id: "tungsten", grams: 5.5 }, { id: "tantalum", grams: 0.016 },
       { id: "tin", grams: 2.0 }, { id: "gold", grams: 0.034 },
+      { id: "silver", grams: 0.34 }, { id: "silicon", grams: 3.2 },
+      { id: "plastics", grams: 11 },
+    ],
+  },
+  // iPhone 13 Pro Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone 13 Pro scaled up for the bigger body.
+  {
+    id: "iphone-13-pro-max", name: "iPhone 13 Pro Max", year: 2021, carbonFootprint: 74, waterFootprint: 14500,
+    materials: [
+      { id: "stainless-steel", grams: 71 }, { id: "glass", grams: 43 },
+      { id: "lithium", grams: 1.1 }, { id: "cobalt", grams: 5 },
+      { id: "nickel", grams: 4.2 }, { id: "graphite", grams: 12 },
+      { id: "copper", grams: 17 }, { id: "rare-earths", grams: 1.3 },
+      { id: "tungsten", grams: 5.5 }, { id: "tantalum", grams: 0.016 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.034 },
       { id: "silver", grams: 0.34 }, { id: "silicon", grams: 3.2 },
       { id: "plastics", grams: 11 },
     ],
@@ -223,6 +283,21 @@ const phones = [
       { id: "plastics", grams: 11 },
     ],
   },
+  // iPhone 14 Pro Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone 14 Pro scaled up for the bigger body.
+  {
+    id: "iphone-14-pro-max", name: "iPhone 14 Pro Max", year: 2022, carbonFootprint: 73, waterFootprint: 14300,
+    materials: [
+      { id: "stainless-steel", grams: 71 }, { id: "glass", grams: 44 },
+      { id: "lithium", grams: 1.2 }, { id: "cobalt", grams: 4.9 },
+      { id: "nickel", grams: 4.3 }, { id: "graphite", grams: 12.5 },
+      { id: "copper", grams: 17 }, { id: "rare-earths", grams: 1.3 },
+      { id: "tungsten", grams: 5.5 }, { id: "tantalum", grams: 0.016 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.036 },
+      { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
+      { id: "plastics", grams: 11 },
+    ],
+  },
   {
     id: "iphone-15", name: "iPhone 15", year: 2023, carbonFootprint: 56, waterFootprint: 11000, bomCost: 390, retailPrice: 799,
     materials: [
@@ -237,7 +312,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-15-pro", name: "iPhone 15 Pro", year: 2023, carbonFootprint: 65, waterFootprint: 12800, bomCost: 480, retailPrice: 999,
+    id: "iphone-15-pro", name: "iPhone 15 Pro", year: 2023, carbonFootprint: 66, waterFootprint: 12900, bomCost: 480, retailPrice: 999,
     materials: [
       { id: "titanium", grams: 22 }, { id: "aluminum", grams: 12 },
       { id: "stainless-steel", grams: 10 }, { id: "glass", grams: 36 },
@@ -246,6 +321,22 @@ const phones = [
       { id: "copper", grams: 17 }, { id: "rare-earths", grams: 1.4 },
       { id: "tungsten", grams: 5.0 }, { id: "tantalum", grams: 0.016 },
       { id: "tin", grams: 2.0 }, { id: "gold", grams: 0.036 },
+      { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
+      { id: "plastics", grams: 10 },
+    ],
+  },
+  // iPhone 15 Pro Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone 15 Pro scaled up for the bigger body.
+  {
+    id: "iphone-15-pro-max", name: "iPhone 15 Pro Max", year: 2023, carbonFootprint: 75, waterFootprint: 14700,
+    materials: [
+      { id: "titanium", grams: 25 }, { id: "aluminum", grams: 14 },
+      { id: "stainless-steel", grams: 12 }, { id: "glass", grams: 41 },
+      { id: "lithium", grams: 1.2 }, { id: "cobalt", grams: 4 },
+      { id: "nickel", grams: 5.2 }, { id: "graphite", grams: 13 },
+      { id: "copper", grams: 17 }, { id: "rare-earths", grams: 1.4 },
+      { id: "tungsten", grams: 5 }, { id: "tantalum", grams: 0.016 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.036 },
       { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
       { id: "plastics", grams: 10 },
     ],
@@ -264,7 +355,7 @@ const phones = [
     ],
   },
   {
-    id: "iphone-16-pro", name: "iPhone 16 Pro", year: 2024, carbonFootprint: 61, waterFootprint: 12000, bomCost: 465, retailPrice: 999,
+    id: "iphone-16-pro", name: "iPhone 16 Pro", year: 2024, carbonFootprint: 66, waterFootprint: 12900, bomCost: 465, retailPrice: 999,
     materials: [
       { id: "titanium", grams: 24 }, { id: "aluminum", grams: 13 },
       { id: "stainless-steel", grams: 10 }, { id: "glass", grams: 38 },
@@ -273,6 +364,22 @@ const phones = [
       { id: "copper", grams: 18 }, { id: "rare-earths", grams: 1.5 },
       { id: "tungsten", grams: 5.0 }, { id: "tantalum", grams: 0.016 },
       { id: "tin", grams: 2.0 }, { id: "gold", grams: 0.036 },
+      { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
+      { id: "plastics", grams: 10 },
+    ],
+  },
+  // iPhone 16 Pro Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone 16 Pro scaled up for the bigger body.
+  {
+    id: "iphone-16-pro-max", name: "iPhone 16 Pro Max", year: 2024, carbonFootprint: 74, waterFootprint: 14500,
+    materials: [
+      { id: "titanium", grams: 28 }, { id: "aluminum", grams: 15 },
+      { id: "stainless-steel", grams: 12 }, { id: "glass", grams: 44 },
+      { id: "lithium", grams: 1.3 }, { id: "cobalt", grams: 3.6 },
+      { id: "nickel", grams: 5.8 }, { id: "graphite", grams: 14 },
+      { id: "copper", grams: 18 }, { id: "rare-earths", grams: 1.5 },
+      { id: "tungsten", grams: 5 }, { id: "tantalum", grams: 0.016 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.036 },
       { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
       { id: "plastics", grams: 10 },
     ],
@@ -300,6 +407,22 @@ const phones = [
       { id: "copper", grams: 18 }, { id: "rare-earths", grams: 1.5 },
       { id: "tungsten", grams: 5.0 }, { id: "tantalum", grams: 0.016 },
       { id: "tin", grams: 2.0 }, { id: "gold", grams: 0.036 },
+      { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
+      { id: "plastics", grams: 9 },
+    ],
+  },
+  // iPhone 17 Pro Max: carbon from Apple's report for the base model; water and materials
+  // are estimates, the iPhone 17 Pro scaled up for the bigger body.
+  {
+    id: "iphone-17-pro-max", name: "iPhone 17 Pro Max", year: 2025, carbonFootprint: 67, waterFootprint: 13100,
+    materials: [
+      { id: "titanium", grams: 23 }, { id: "aluminum", grams: 18 },
+      { id: "stainless-steel", grams: 9 }, { id: "glass", grams: 44 },
+      { id: "lithium", grams: 1.4 }, { id: "cobalt", grams: 3.2 },
+      { id: "nickel", grams: 6 }, { id: "graphite", grams: 15 },
+      { id: "copper", grams: 18 }, { id: "rare-earths", grams: 1.5 },
+      { id: "tungsten", grams: 5 }, { id: "tantalum", grams: 0.016 },
+      { id: "tin", grams: 2 }, { id: "gold", grams: 0.036 },
       { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
       { id: "plastics", grams: 9 },
     ],
