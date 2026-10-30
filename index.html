@@ -10,42 +10,53 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=4" />
+    <link rel="stylesheet" href="style.css?v=5" />
   </head>
   <body>
     <div id="app">
       <div class="hero-content">
         <h1>Your iPhone Footprint</h1>
         <p class="subtitle">
-          Check off every iPhone you have owned, and mark each one new or
-          refurbished. You will see the total carbon, water, and raw material
-          cost of all your phones together.
+          Check every iPhone you have owned, and mark each one new or
+          refurbished. Your totals and chart update as you go.
         </p>
       </div>
 
-      <div id="calc-grid"></div>
+      <section id="dash" aria-live="polite">
+        <div class="tiles">
+          <div class="tile co2">
+            <div class="tile-head"><span class="tile-value" id="calc-co2">0</span><span class="tile-unit">kg CO&#8322;</span></div>
+            <div class="tile-equiv" id="calc-co2-equiv">Carbon from making, shipping, and using your phones.</div>
+            <div class="icons" id="co2-icons" aria-hidden="true"></div>
+            <div class="icon-key" id="co2-key"></div>
+          </div>
+          <div class="tile water">
+            <div class="tile-head"><span class="tile-value" id="calc-water">0</span><span class="tile-unit">liters of water</span></div>
+            <div class="tile-equiv" id="calc-water-equiv">Water used over each phone's life cycle.</div>
+            <div class="icons" id="water-icons" aria-hidden="true"></div>
+            <div class="icon-key" id="water-key"></div>
+          </div>
+          <div class="tile raw">
+            <div class="tile-head"><span class="tile-value" id="calc-raw">$0</span><span class="tile-unit">in raw minerals</span></div>
+            <div class="tile-equiv" id="calc-raw-equiv">What the metals inside your phones would sell for.</div>
+            <div class="icons" id="raw-icons" aria-hidden="true"></div>
+            <div class="icon-key" id="raw-key"></div>
+          </div>
+        </div>
 
-      <div id="calc-summary" class="hidden">
-        <div class="calc-stat">
-          <div class="calc-stat-value" id="calc-co2">0</div>
-          <div class="calc-stat-label">kg CO&#8322; total</div>
-          <div class="calc-stat-equiv" id="calc-co2-equiv"></div>
+        <div class="chart-card">
+          <div class="chart-title">
+            <span>Carbon from each phone you owned</span>
+            <span id="calc-devices-equiv" class="chart-sub">Check a phone below to start.</span>
+          </div>
+          <div id="chart" class="chart"></div>
+          <div class="legend"><span class="sw new"></span>New <span class="sw refurb"></span>Refurbished</div>
         </div>
-        <div class="calc-stat">
-          <div class="calc-stat-value" id="calc-water">0</div>
-          <div class="calc-stat-label">Liters of water (lifecycle)</div>
-          <div class="calc-stat-equiv" id="calc-water-equiv"></div>
-        </div>
-        <div class="calc-stat">
-          <div class="calc-stat-value" id="calc-raw">$0</div>
-          <div class="calc-stat-label">Raw material cost</div>
-          <div class="calc-stat-equiv" id="calc-raw-equiv"></div>
-        </div>
-        <div class="calc-stat">
-          <div class="calc-stat-value" id="calc-devices">0</div>
-          <div class="calc-stat-label">Devices</div>
-          <div class="calc-stat-equiv" id="calc-devices-equiv"></div>
-        </div>
+      </section>
+
+      <div id="mini" class="mini" hidden>
+        <span id="mini-text"></span>
+        <button type="button" id="mini-top">See the chart</button>
       </div>
 
       <div id="refurb-note" class="hidden">
@@ -54,6 +65,9 @@
         which make up about 80% of an iPhone's environmental cost. The calculator
         counts a refurbished phone at 20% of a new phone's footprint.
       </div>
+
+      <h2 class="list-title">Check every iPhone you have owned</h2>
+      <div id="calc-grid"></div>
 
       <footer>
         <p>
@@ -70,7 +84,7 @@
       </footer>
     </div>
 
-    <script src="data.js?v=4"></script>
-    <script src="app.js?v=4"></script>
+    <script src="data.js?v=5"></script>
+    <script src="app.js?v=5"></script>
   </body>
 </html>
