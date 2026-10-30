@@ -304,4 +304,59 @@ const phones = [
       { id: "plastics", grams: 9 },
     ],
   },
+  // iPhone Air, iPhone 18 Pro, 18 Pro Max, and Duo (added 2026-10-30). Carbon is
+  // the 256 GB total from Apple's Product Environmental Reports. Water and
+  // materials are estimates made the same way as for the iPhone 6 to 8.
+  {
+    id: "iphone-air", name: "iPhone Air", year: 2025, carbonFootprint: 55, waterFootprint: 10800,
+    materials: [
+      { id: "titanium", grams: 18 }, { id: "aluminum", grams: 8 },
+      { id: "glass", grams: 30 }, { id: "lithium", grams: 1.3 },
+      { id: "cobalt", grams: 3.2 }, { id: "nickel", grams: 6.0 },
+      { id: "graphite", grams: 14 }, { id: "copper", grams: 17 },
+      { id: "rare-earths", grams: 1.5 }, { id: "tungsten", grams: 5.0 },
+      { id: "tantalum", grams: 0.016 }, { id: "tin", grams: 2.0 },
+      { id: "gold", grams: 0.036 }, { id: "silver", grams: 0.36 },
+      { id: "silicon", grams: 3.5 }, { id: "plastics", grams: 9 },
+    ],
+  },
+  {
+    id: "iphone-18-pro", name: "iPhone 18 Pro", year: 2026, carbonFootprint: 63, waterFootprint: 12300,
+    materials: [
+      { id: "aluminum", grams: 32 }, { id: "glass", grams: 38 },
+      { id: "lithium", grams: 1.3 }, { id: "cobalt", grams: 3.2 },
+      { id: "nickel", grams: 6.0 }, { id: "graphite", grams: 14 },
+      { id: "copper", grams: 17 }, { id: "rare-earths", grams: 1.5 },
+      { id: "tungsten", grams: 5.0 }, { id: "tantalum", grams: 0.016 },
+      { id: "tin", grams: 2.0 }, { id: "gold", grams: 0.036 },
+      { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
+      { id: "plastics", grams: 9 },
+    ],
+  },
+  {
+    id: "iphone-18-pro-max", name: "iPhone 18 Pro Max", year: 2026, carbonFootprint: 69, waterFootprint: 13500,
+    materials: [
+      { id: "aluminum", grams: 38 }, { id: "glass", grams: 44 },
+      { id: "lithium", grams: 1.3 }, { id: "cobalt", grams: 3.2 },
+      { id: "nickel", grams: 6.0 }, { id: "graphite", grams: 14 },
+      { id: "copper", grams: 17 }, { id: "rare-earths", grams: 1.5 },
+      { id: "tungsten", grams: 5.0 }, { id: "tantalum", grams: 0.016 },
+      { id: "tin", grams: 2.0 }, { id: "gold", grams: 0.036 },
+      { id: "silver", grams: 0.36 }, { id: "silicon", grams: 3.5 },
+      { id: "plastics", grams: 9 },
+    ],
+  },
+  {
+    id: "iphone-duo", name: "iPhone Duo", year: 2026, carbonFootprint: 93, waterFootprint: 18200,
+    materials: [
+      { id: "titanium", grams: 26 }, { id: "aluminum", grams: 14 },
+      { id: "glass", grams: 46 }, { id: "lithium", grams: 1.3 },
+      { id: "cobalt", grams: 3.2 }, { id: "nickel", grams: 6.0 },
+      { id: "graphite", grams: 14 }, { id: "copper", grams: 17 },
+      { id: "rare-earths", grams: 1.5 }, { id: "tungsten", grams: 5.0 },
+      { id: "tantalum", grams: 0.016 }, { id: "tin", grams: 2.0 },
+      { id: "gold", grams: 0.036 }, { id: "silver", grams: 0.36 },
+      { id: "silicon", grams: 3.5 }, { id: "plastics", grams: 9 },
+    ],
+  },
 ];
